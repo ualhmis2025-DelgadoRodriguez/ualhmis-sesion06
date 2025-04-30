@@ -1,0 +1,10 @@
+abc,password demasiado corto
+12345,********
+12345678,********
+123456789,*********
+1234567890,**********
+12345678901,***********
+123456789012,************
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,************
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,password demasiado largo
+
