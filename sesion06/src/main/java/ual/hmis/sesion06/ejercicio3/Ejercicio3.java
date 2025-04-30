@@ -19,7 +19,6 @@ public class Ejercicio3 {
         } else {
             resultado = "password demasiado corto";
         }
-
         return resultado;
     }
 }
