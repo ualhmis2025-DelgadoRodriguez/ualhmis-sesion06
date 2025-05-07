@@ -3,7 +3,6 @@ package ual.hmis.sesion06.ejercicio4;
 import java.util.*;
 
 public class MezclaLineal {
-
     public List<Integer> mezclar(List<Integer> lista1, List<Integer> lista2) {
         List<Integer> resultado = new ArrayList<>();
         int i = 0, j = 0;
