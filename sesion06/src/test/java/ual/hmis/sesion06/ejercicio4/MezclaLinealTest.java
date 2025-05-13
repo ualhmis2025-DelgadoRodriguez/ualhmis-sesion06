@@ -11,7 +11,6 @@ class MezclaLinealTest {
     @ParameterizedTest
     @CsvFileSource(resources = "/ual/hmis/sesion06/ejercicio4/CSVEjercicio4.csv", numLinesToSkip = 0)
     void testMezclar(String lista1, String lista2, String expectedResult) {
-        // Convertir las cadenas de entrada a listas de enteros
         List<Integer> lista1Parsed = parseStringToList(lista1);
         List<Integer> lista2Parsed = parseStringToList(lista2);
         List<Integer> expectedParsed = parseStringToList(expectedResult);
