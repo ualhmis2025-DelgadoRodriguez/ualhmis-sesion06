@@ -164,13 +164,28 @@
 		</configuration>
 	</plugin>
 		<plugin>
-		<groupId>org.apache.maven.plugins</groupId>
-		<artifactId>maven-javadoc-plugin</artifactId>
-		<version>3.5.0</version>
-		<configuration>
-			<show>private</show>
-		</configuration>
-	</plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>3.5.0</version>
+        <configuration> 
+          <!-- <reportOutputDirectory>
+		  	${project.reporting.outputDirectory}/../../docs
+		  </reportOutputDirectory> -->
+          <doclet>nl.talsmasoftware.umldoclet.UMLDoclet</doclet>
+          <docletArtifact>
+            <groupId>nl.talsmasoftware</groupId>
+            <artifactId>umldoclet</artifactId>
+            <version>2.1.0</version>
+          </docletArtifact>
+          <additionalOptions>
+			<!-- <additionalOption>-umlImageFormat svg_img,png</additionalOption> -->
+			<additionalOption>-umlImageFormat svg_img</additionalOption>
+			<additionalOption>-private</additionalOption>
+			<!-- <additionalOption>-createPumlFiles</additionalOption> -->
+			<additionalOption>-umlExcludedTypeReferences</additionalOption> <!-- añade metodos toString() y equals() -->
+          </additionalOptions>
+        </configuration>
+      </plugin>
 		<plugin>
 		<groupId>org.owasp</groupId>
 		<artifactId>dependency-check-maven</artifactId>
@@ -236,5 +251,13 @@
 		<artifactId>log4j-core</artifactId>
 		<version>2.15.0</version>
 	</dependency>
+	
+	 <!-- https://mvnrepository.com/artifact/nl.talsmasoftware/umldoclet -->
+    <dependency>
+      <groupId>nl.talsmasoftware</groupId>
+      <artifactId>umldoclet</artifactId>
+      <version>2.1.0</version>
+      <scope>provided</scope>
+    </dependency>
   </dependencies>
 </project>

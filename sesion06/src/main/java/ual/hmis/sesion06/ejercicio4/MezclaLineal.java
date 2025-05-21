@@ -2,7 +2,19 @@ package ual.hmis.sesion06.ejercicio4;
 
 import java.util.*;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class MezclaLineal.
+ */
 public class MezclaLineal {
+    
+    /**
+     * Mezclar.
+     *
+     * @param lista1 the lista 1
+     * @param lista2 the lista 2
+     * @return the list
+     */
     public List<Integer> mezclar(List<Integer> lista1, List<Integer> lista2) {
         List<Integer> resultado = new ArrayList<>();
         int i = 0, j = 0;

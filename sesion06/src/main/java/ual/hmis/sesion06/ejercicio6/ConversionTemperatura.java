@@ -1,7 +1,19 @@
 package ual.hmis.sesion06.ejercicio6;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class ConversionTemperatura.
+ */
 public class ConversionTemperatura {
 
+	/**
+	 * Convert temperature.
+	 *
+	 * @param temperature the temperature
+	 * @param fromUnit the from unit
+	 * @param toUnit the to unit
+	 * @return the double
+	 */
 	public double convertTemperature(double temperature, String fromUnit, String toUnit) {
 	    if (fromUnit == null || toUnit == null) {
 	        return Double.NaN;  
