@@ -1,16 +1,15 @@
 package ual.hmis.sesion06.ejercicio1;
 
-// TODO: Auto-generated Javadoc
 /**
- * The Class Ejercicio1.
+ * Clase Ejercicio1.
  */
 public class Ejercicio1 {
 	
 	/**
 	 * Transformar.
 	 *
-	 * @param x the x
-	 * @return the int
+	 * @param x numero
+	 * @return resultado
 	 */
 	public int transformar(int x) {
 		int resultado = 0;

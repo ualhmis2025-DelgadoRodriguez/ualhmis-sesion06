@@ -3,17 +3,16 @@ package ual.hmis.sesion06.ejercicio5;
 import java.io.*;
 import java.util.*;
 
-// TODO: Auto-generated Javadoc
 /**
- * The Class ContadorDePalabras.
+ * Clase ContadorDePalabras.
  */
 public class ContadorDePalabras {
     
     /**
      * Procesar archivo.
      *
-     * @param archivo the archivo
-     * @return the map
+     * @param archivo archivo
+     * @return el contador de palabras
      */
     public Map<String, Integer> procesarArchivo(String archivo) {
         Map<String, Integer> contadorDePalabras = new HashMap<>();
@@ -38,8 +37,8 @@ public class ContadorDePalabras {
     /**
      * Obtener palabras alfabeticamente.
      *
-     * @param archivo the archivo
-     * @return the list
+     * @param archivo archivo
+     * @return palabras
      */
     public List<String> obtenerPalabrasAlfabeticamente(String archivo) {
         Map<String, Integer> contadorDePalabras = procesarArchivo(archivo);
@@ -51,8 +50,8 @@ public class ContadorDePalabras {
     /**
      * Obtener palabras por ocurrencias.
      *
-     * @param archivo the archivo
-     * @return the list
+     * @param archivo archivo
+     * @return palabras ordenadas
      */
     public List<String> obtenerPalabrasPorOcurrencias(String archivo) {
         Map<String, Integer> contadorDePalabras = procesarArchivo(archivo);

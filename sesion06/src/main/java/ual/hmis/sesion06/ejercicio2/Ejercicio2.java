@@ -1,17 +1,16 @@
 package ual.hmis.sesion06.ejercicio2;
 
-// TODO: Auto-generated Javadoc
 /**
- * The Class Ejercicio2.
+ * Clase Ejercicio2.
  */
 public class Ejercicio2 {
 	
 	/**
 	 * Login.
 	 *
-	 * @param username the username
-	 * @param password the password
-	 * @return true, if successful
+	 * @param username nombre del usuario
+	 * @param password password del usuario
+	 * @return el resultado de comprobar el login en la base de datos
 	 */
 	public boolean login (String username, String password){
 		// comprobar que sean distintos de vacio
@@ -28,8 +27,8 @@ public class Ejercicio2 {
 	/**
 	 * Comprueba login en BD.
 	 *
-	 * @param username the username
-	 * @param password the password
+	 * @param username nombre del usuario
+	 * @param password password del usuario
 	 * @return true, if successful
 	 */
 	public boolean compruebaLoginEnBD

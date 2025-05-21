@@ -1,16 +1,15 @@
 package ual.hmis.sesion06.ejercicio3;
 
-// TODO: Auto-generated Javadoc
 /**
- * The Class Ejercicio3.
+ * Clase Ejercicio3.
  */
 public class Ejercicio3 {
     
     /**
      * Enmascarar password.
      *
-     * @param password the password
-     * @return the string
+     * @param password password del usuario
+     * @return el resultado dependiendo del numero de caracteres que tenga la password
      */
     public String enmascararPassword(String password) {
         int length = password.length();
