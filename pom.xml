@@ -105,6 +105,19 @@
           </additionalOptions>
         </configuration>
       </plugin>
+       <plugin>
+            <groupId>org.owasp</groupId>
+            <artifactId>dependency-check-maven</artifactId>
+            <version>8.2.1</version> <!-- Usa la versión más reciente -->
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>check</goal>
+                        <goal>aggregate</goal> <!-- Opcional para multi-módulo -->
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
         </plugins>
     </build>
     <reporting>
@@ -186,25 +199,6 @@
           </additionalOptions>
         </configuration>
       </plugin>
-		<plugin>
-		<groupId>org.owasp</groupId>
-		<artifactId>dependency-check-maven</artifactId>
-		<version>8.2.1</version>
-		<configuration>
-			<skipTestScope>false</skipTestScope>
-			<formats>
-				<format>HTML</format>
-				<format>XML</format>
-			</formats>
-		</configuration>
-		<reportSets>
-			<reportSet>
-				<reports>
-					<report>aggregate</report>
-				</reports>
-			</reportSet>
-		</reportSets>
-	</plugin>
     </plugins>
     </reporting>
     <dependencies>
