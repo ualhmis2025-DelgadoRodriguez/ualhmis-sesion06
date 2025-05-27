@@ -108,12 +108,12 @@
        <plugin>
             <groupId>org.owasp</groupId>
             <artifactId>dependency-check-maven</artifactId>
-            <version>8.2.1</version> <!-- Usa la versión más reciente -->
+            <version>8.2.1</version> 
             <executions>
                 <execution>
                     <goals>
                         <goal>check</goal>
-                        <goal>aggregate</goal> <!-- Opcional para multi-módulo -->
+                        <goal>aggregate</goal> 
                     </goals>
                 </execution>
             </executions>
